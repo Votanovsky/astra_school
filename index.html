@@ -555,8 +555,8 @@
             let tl = gsap.timeline({ paused: true });
             
             tl.to(answer, { duration: .25, height: 'auto', }, "<-=.1")
-                .to(btn_x, { duration: .25, rotate: 135 }, '-=.15')  
-                .to(answer, { duration: .2, autoAlpha: 1, marginTop: '20px' })
+                .to(btn_x, { duration: .25, rotate: 135 }, '-=.1')  
+                .to(answer, { duration: .2, autoAlpha: 1, marginTop: '20px' },'-=.15')
 
             tl.reverse()
             
