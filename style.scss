@@ -1,0 +1,117 @@
+
+// === VARIABLES ===
+// colors: 
+$color-white: #fff;
+$color-black: #404040;
+// $color-yellow: #FFFF00;
+$color-yellow: #FFFF00;
+$color-green: #FFFF00;
+$color-pink: #F691EC;
+$color-blue: #3874F0;
+$color-purple: #AA14FC;
+$color-darken_purple: #9b0944;
+// ===/VARIABLES===
+
+// === Adaptive breakpoints ===
+$breakpoint-xxs-min: 360px;
+$breakpoint-xs-min: 420px;
+$breakpoint-sm-min: 576px;
+$breakpoint-md-min: 768px;
+$breakpoint-lg-min: 992px;
+$breakpoint-xl-min: 1200px;
+$breakpoint-xxl-min: 1400px;
+
+$breakpoint-xs-max: $breakpoint-xs-min - 1px;
+$breakpoint-s-max: $breakpoint-sm-min - 1px;
+$breakpoint-sm-max: $breakpoint-md-min - 1px;
+$breakpoint-md-max: $breakpoint-lg-min - 1px;
+$breakpoint-lg-max: $breakpoint-xl-min - 1px;
+$breakpoint-xl-max: $breakpoint-xxl-min - 1px;
+// === /Adaptive breakpoints ===
+
+// fonts
+@font-face {
+    font-family: 'H_condensed_black'; 
+    src: url(/fonts/HelveticaNeueBlackCondensed.ttf); 
+}
+@font-face {
+    font-family: 'H_condensed_bold'; 
+    src: url(/fonts/HelveticaNeueBoldCondensed.ttf); 
+}
+@font-face {
+    font-family: 'H_bold'; 
+    src: url(/fonts/HelveticaNeueCyr-Bold.ttf); 
+}
+@font-face {
+    font-family: 'H_medium'; 
+    src: url(/fonts/HelveticaNeueCyr-Medium.ttf); 
+}
+@font-face {
+    font-family: 'H_roman'; 
+    src: url(/fonts/HelveticaNeueCyr-Roman.ttf); 
+}
+@font-face {
+    font-family: 'H_light'; 
+    src: url(/fonts/HelveticaNeueCyr-Light.ttf); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'H_roman'; 
+    color: $color-black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+.btn_enroll {
+    font-size: 28px;
+    padding: 24px 36px;
+    border-radius: 20px;
+    width: fit-content;
+    line-height: 95%;
+    @media  (max-width: $breakpoint-sm-min) {
+        font-size: 20px;
+        padding: 24px 36px 22px;
+    }
+    &--white {
+        background: $color-white;
+        color: $color-black;
+    }
+    &--black {
+        color: $color-white;
+        background: $color-black;
+    }
+    &--purple {
+        color: $color-white;
+        background: darken($color-purple, 10%);
+    }
+    &--green {
+        color: $color-white;
+        background: #429166;
+    }
+}
+
+.title_h2 {
+    font-family: 'H_condensed_bold'; 
+    font-size: 56px;
+    line-height: 96.5%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+@import 'scss/header.scss';
+@import 'scss/sec_one.scss';
+@import 'scss/sec_two.scss';
+@import 'scss/sec_three.scss';
+@import 'scss/sec_four.scss';
+@import 'scss/sec_five.scss';
+@import 'scss/sec_six.scss';
+@import 'scss/footer.scss';
