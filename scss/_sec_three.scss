@@ -4,10 +4,6 @@
     @media  (max-width: $breakpoint-sm-min) {
         padding: 0 15px 110px;
     }
-    .slider_wr {
-        display: flex;
-        flex-direction: column;
-    }
     .img_star {
         position: absolute;
         top: -10%;
@@ -16,17 +12,27 @@
         transform: rotate(-15deg);
     }
 
+    .swiper_cards {
+        overflow: hidden;
+    }
     .slider_wr {
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
+        // padding: 0 30px;
+        
+        @media  (max-width: $breakpoint-lg-min) {
+            // height: fit-content;
+        }
         .slide {
-            width: 100%;
+            // width: 90% !important;
             height: auto;
             padding: 30px 50px 80px;
             background: $color-pink;
             background: $color-purple;
             border-radius: 30px;
             margin-bottom: 30px;
+            // margin-right: 30px;
+            cursor: grab;
             @media  (max-width: $breakpoint-lg-min) {
                 padding: 20px 20px 60px;
             }
@@ -34,16 +40,8 @@
                 padding: 20px 20px 30px;
             }
             @media  (max-width: $breakpoint-lg-min) {
-                margin-bottom: 10px;
-            }
-            &--matan {
-                background: #19DE97;
-            }
-            &--obch {
-                background: #19DE97;
-                .btn_enroll {
-                    background: #419266;
-                }
+                // margin-bottom: 10px;
+                height: fit-content;
             }
             .promo {
                 display: flex;
@@ -161,76 +159,162 @@
                 }
             }
             
+            &--matan {
+                background: #698EF1;
+                .btn_enroll {
+                    background: #4069d5;
+                }
+
+                .content {
+                    .img {
+                        height: auto;
+                        width: 40%;
+                        bottom: -10%;
+                        right: 70px;
+                        @media  (max-width: $breakpoint-md-min) {
+                            bottom: 0;
+                            right: 0;
+                            margin: 0 auto;
+                            width: 80%;
+                        }
+                    }
+
+                    .info {
+                        width: 50%;
+                        @media  (max-width: $breakpoint-md-min) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            &--obch {
+                background: #19DE97;
+                .btn_enroll {
+                    background: #419266;
+                }
+            }
+            &--eng {
+                background: #9C27F3;
+                .btn_enroll {
+                    background: #8119D2;
+                    color: $color-white;
+                }
+            }
+            &--rus {
+                background: #E41552;
+                .btn_enroll {
+                    background: #AC2049;
+                    color: $color-white;
+                }
+            }
+            &--story {
+                background: #EEC565;
+                .btn_enroll {
+                    background: #CD9633;
+                    color: $color-white;
+                }
+                .content {
+                    .img {
+                        height: auto;
+                        width: 40%;
+                        bottom: -15%;
+                        @media  (max-width: $breakpoint-lg-min) {
+                            bottom: -10%;
+                        }
+                        @media  (max-width: $breakpoint-md-min) {
+                            bottom: 0;
+                            right: 0;
+                            margin: 0 auto;
+                            width: 90%;
+                        }
+                    }
+                }
+            }
             
         }
+    }
 
-        .control_panel {
-            background: $color-blue;
-            border-radius: 80px;
-            padding: 30px 50px;
+    .control_panel {
+        background: $color-blue;
+        border-radius: 80px;
+        padding: 30px 50px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        position: relative;
+        z-index: 3;
+        @media  (max-width: $breakpoint-lg-min) {
+            padding: 20px 30px;
+        }
+        @media  (max-width: $breakpoint-md-min) {
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 20px;
+            margin-top: 15px;
+        }
+        .btns {
             display: flex;
-            justify-content: space-between;
+            align-items: center;
+            font-family: 'H_roman';
+            font-size: 28px;
+            width: 260px;
             @media  (max-width: $breakpoint-lg-min) {
-                padding: 20px 30px;
+                width: 100%;
+                text-align: center;
+            }
+            .swiper_wrapper {
+                display: flex;
+                width: 100%;
+                overflow: hidden;
+            }
+            @media  (max-width: $breakpoint-lg-min) {
+                font-size: 18px;
+                // margin-bottom: 10px;
             }
             @media  (max-width: $breakpoint-md-min) {
-                flex-direction: column;
-                align-items: center;
-                padding: 10px 20px;
+                font-size: 18px;
+                width: 100%;
             }
-            .btns {
-                display: flex;
-                align-items: center;
-                font-family: 'H_roman';
-                font-size: 28px;
-                @media  (max-width: $breakpoint-lg-min) {
-                    font-size: 18px;
-                    // margin-bottom: 10px;
-                }
+            .subject {
+                padding: 3px 24px 0;
+                color: $color-white;
+                // width: 100% !important;
                 @media  (max-width: $breakpoint-md-min) {
-                    font-size: 18px;
-                    width: 100%;
-                }
-                .subject {
-                    padding: 3px 24px 0;
-                    color: $color-white;
-                    @media  (max-width: $breakpoint-md-min) {
-                        padding: 3px 10px 0;
-                    }
-                }
-                svg {
-                    width: 16px;
-                    cursor: pointer;
-                    @media  (max-width: $breakpoint-md-min) {
-                        width: 20px;
-                        &:first-child {
-                            margin-right: auto; 
-                        }
-                        &:last-child {
-                            margin-left: auto; 
-                        }
-                    }
-                    path {
-                        fill: $color-white;
-                    }
+                    padding: 3px 10px 0;
                 }
             }
+            svg {
+                width: 16px;
+                cursor: pointer;
+                @media  (max-width: $breakpoint-md-min) {
+                    width: 20px;
+                    &:first-child {
+                        margin-right: auto; 
+                    }
+                    &:last-child {
+                        margin-left: auto; 
+                    }
+                }
+                path {
+                    fill: $color-white;
+                }
+            }
+        }
 
-            .all_subjects {
-                font-family: 'H_roman';
-                font-size: 28px;
-                padding: 20px 30px;
-                border-radius: 80px;
-                background: $color-white;
-                width: fit-content;
-                color: $color-black;
-                @media  (max-width: $breakpoint-lg-min) {
-                    font-size: 18px;
-                    padding: 14px 20px;
-                }
-                @media  (max-width: $breakpoint-md-min) {
-                    display: none;
-                }
+        .all_subjects {
+            font-family: 'H_roman';
+            font-size: 28px;
+            padding: 20px 30px;
+            border-radius: 80px;
+            background: $color-white;
+            width: fit-content;
+            color: $color-black;
+            @media  (max-width: $breakpoint-lg-min) {
+                font-size: 18px;
+                padding: 14px 20px;
+            }
+            @media  (max-width: $breakpoint-md-min) {
+                display: none;
             }
         }
     }

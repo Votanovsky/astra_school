@@ -11,6 +11,13 @@
     <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.297/build/spline-viewer.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
     
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 </head>
 <body>
     <header class="header">
@@ -69,7 +76,62 @@
             </div>
         </div>
     </header>
+
+    <div class="menu_mobile">
+        <ul class="menu_wr">
+            <li class="menu_wr-it">Курсы</li>
+            <li class="menu_wr-it">Форматы</li>
+            <li class="menu_wr-it">Предметы</li>
+            <li class="menu_wr-it">Контакты</li>
+        </ul>
+    </div>
     
+    <div class="popup popup--1">
+        <div class="wr_popup">
+            <img src="media/ru_lang.png" alt="" class="popup_img popup_img--1">
+            <img src="media/megaphone.png" alt="" class="popup_img popup_img--2">
+            <div class="popup_form">
+                <div id="close_popup" class="close_popup">
+                    &#10005;
+                </div>
+                <div class="name">
+                    Записаться на <br> консультацию
+                </div>
+                <form action="#">
+                    <input class="input" type="text" placeholder="Имя">
+                    <input class="input" type="text" placeholder="Телефон">
+                    <input class="input" type="text" placeholder="Ссылка на соцсеть">
+    
+                    <button class="form_submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup--2">
+        <div class="wr_popup">
+            <img src="media/ru_lang.png" alt="" class="popup_img popup_img--1">
+            <img src="media/megaphone.png" alt="" class="popup_img popup_img--2">
+            <div class="popup_form">
+                <div id="close_popup2" class="close_popup">
+                    &#10005;
+                </div>
+                <div class="name">
+                    Записаться на <br> консультацию
+                </div>
+                <form action="#">
+                    <input class="input" type="text" placeholder="Имя">
+                    <input class="input" type="text" placeholder="Телефон">
+                    <input class="input" type="text" placeholder="Ссылка на соцсеть">
+    
+                    <button class="form_submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
     <section class="section_one">
@@ -114,74 +176,144 @@
     </section>
 
     <section class="section_three">
-        <!-- <img class="img_star" src="/media/star_b.svg" alt=""> -->
-
-        <div class="slider_wr">
-            <div class="slide slide--obch">
-
-                <div class="promo">
-                    <img src="media/Rectangle.png" alt="">
-                    <span>Первое занятие бесплатно</span>
+        <div class="swiper_cards">
+            <div class="slider_wr swiper-wrapper">
+                <div class="slide slide--obch swiper-slide">
+    
+                    <div class="promo">
+                        <img src="media/Rectangle.png" alt="">
+                        <span>Первое занятие бесплатно</span>
+                    </div>
+    
+                    <div class="content">
+                        <div class="info">
+                            <div class="subject">
+                                Обществознание<br>подготовка к ОГЭ
+                            </div>
+            
+                            <div class="descr">
+                                Подготовка к экзамену по обществознанию включает в себя и прохождение теории, и решение тестовых заданий, и разбор второй части. Именно поэтому у нас представлено несколько курсов по этому предмету.
+                                Годовой курс - изучение всех блоков теории с параллельным нарешиванем заданий первой и второй части, то есть полная подготовка к экзамену
+                            </div>
+            
+                            <a href="https://vk.com/astra.school" class="btn_enroll btn_enroll--purple">Записаться на курс</a>
+                        </div>
+        
+                        <img class="img" src="/media/obsche.png" alt="" class="img">
+                    </div>
                 </div>
+                <div class="slide slide--matan swiper-slide">
+    
+                    <div class="promo">
+                        <img src="media/Rectangle.png" alt="">
+                        <span>Первое занятие бесплатно</span>
+                    </div>
 
-                <!-- <div class="content">
-                    <div class="info">
-                        <div class="subject">
-                            Русский язык<br>подготовка к ОГЭ
+                    <div class="content">
+                        <div class="info">
+                            <div class="subject">
+                                Математика<br>подготовка к ОГЭ
+                            </div>
+            
+                            <div class="descr">
+                                Курс по математике направлен на практическую подготовку и разбор заданий тестовой и письменной части, а также проработку теории по основным темам алгебры и геометрии.
+                            </div>
+            
+                            <a href="https://vk.com/astra.school" class="btn_enroll btn_enroll--purple">Записаться на курс</a>
                         </div>
         
-                        <div class="descr">
-                            Курс по русскому языку включает в себя подготовку к <span>устному экзамену, изложению и сочинению.</span> Эта программа предполагает <span>в основном практику, а не теорию</span> и подходит для тех, <span>кто уже знает большую часть правил</span> по грамматике и пунктуации и готов приступить к разбору экзаменационных заданий. Мы расскажем обо всех критериях оценивания, научим Вас грамотно излагать мысли и подробно разберем, как правильно выполнить устную и письменную части экзамена. 
-                        </div>
-        
-                        <a href="#" class="btn_enroll btn_enroll--purple">Записаться на курс</a>
+                        <img class="img" src="/media/matan.png" alt="" class="img">
+                    </div>
+                </div>
+                <div class="slide slide--eng swiper-slide">
+    
+                    <div class="promo">
+                        <img src="media/Rectangle.png" alt="">
+                        <span>Первое занятие бесплатно</span>
                     </div>
     
-                    <img class="img" src="/media/ru_lang.png" alt="" class="img">
-                </div> -->
-                <!-- <div class="content">
-                    <div class="info">
-                        <div class="subject">
-                            Математика<br>подготовка к ОГЭ
+                    <div class="content">
+                        <div class="info">
+                            <div class="subject">
+                                Английский язык<br>подготовка к ОГЭ
+                            </div>
+            
+                            <div class="descr">
+                                Полный курс подготовки к ОГЭ по английскому подойдет для тех, кто уже неплохо разбирается в языке и готов приступить непосредственно к практической подготовке к экзамену. Мы разберем все блоки - аудирование, чтение, письмо и говорение, узнаем о критериях оценивания конкретных видов заданий.
+                            </div>
+            
+                            <a href="https://vk.com/astra.school" class="btn_enroll">Записаться на курс</a>
                         </div>
         
-                        <div class="descr">
-                            Курс по математике направлен на <span>практическую подготовку и разбор заданий</span> тестовой и письменной части, а также проработку <span>теории по основным темам</span> алгебры и геометрии. 
-                        </div>
-        
-                        <a href="#" class="btn_enroll btn_enroll--purple">Записаться на курс</a>
+                        <img class="img" src="/media/eng.png" alt="" class="img">
+                    </div>
+                </div>
+                <div class="slide slide--story swiper-slide">
+    
+                    <div class="promo">
+                        <img src="media/Rectangle.png" alt="">
+                        <span>Первое занятие бесплатно</span>
                     </div>
     
-                    <img class="img" src="/media/matan.png" alt="" class="img">
-                </div> -->
-                <div class="content">
-                    <div class="info">
-                        <div class="subject">
-                            Обществознание<br>подготовка к ОГЭ
+                    <div class="content">
+                        <div class="info">
+                            <div class="subject">
+                                История<br>подготовка к ОГЭ
+                            </div>
+            
+                            <div class="descr">
+                                Курс по истории включает в себя полную подготовку к экзамену, то есть
+                                изучение всего необходимого теоретического материала по отечественной и зарубежной истории, а также регулярную практику по всем экзаменационным заданиям
+                            </div>
+            
+                            <a href="https://vk.com/astra.school" class="btn_enroll">Записаться на курс</a>
                         </div>
         
-                        <div class="descr">
-                            Подготовка к экзамену по обществознанию включает в себя и прохождение теории, и решение тестовых заданий, и разбор второй части. Именно поэтому у нас представлено несколько курсов по этому предмету.
-                            Годовой курс - изучение всех блоков теории с параллельным нарешиванем заданий первой и второй части, то есть полная подготовка к экзамену
-                        </div>
-        
-                        <a href="https://vk.com/astra.school" class="btn_enroll btn_enroll--purple">Записаться на курс</a>
+                        <img class="img" src="/media/story.png" alt="" class="img">
+                    </div>
+                </div>
+                <div class="slide slide--rus swiper-slide">
+    
+                    <div class="promo">
+                        <img src="media/Rectangle.png" alt="">
+                        <span>Первое занятие бесплатно</span>
                     </div>
     
-                    <img class="img" src="/media/obsche.png" alt="" class="img">
+                    <div class="content">
+                        <div class="info">
+                            <div class="subject">
+                                Русский язык<br>подготовка к ОГЭ
+                            </div>
+            
+                            <div class="descr">
+                                Курс по русскому языку включает в себя подготовку к устному экзамену, изложению и сочинению. Эта программа предполагает в основном практику, а не теорию и подходит для тех, кто уже знает большую часть правил по грамматике и пунктуации и готов приступить к разбору экзаменационных заданий.
+                            </div>
+            
+                            <a href="https://vk.com/astra.school" class="btn_enroll">Записаться на курс</a>
+                        </div>
+        
+                        <img class="img" src="/media/ru_lang.png" alt="" class="img">
+                    </div>
                 </div>
             </div>
-
+    
             <div class="control_panel">
-
-                <div class="btns">
-                    <svg class="prev" width="26" height="39" viewBox="0 0 26 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="btns swiper_names">
+                    <svg class="prev swiper-prev" width="26" height="39" viewBox="0 0 26 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0059 39L26 35.4593L8 19.5026L26 3.54593L22 0L0 19.5026L22.0059 39Z" fill="#404040"/>
                     </svg>
-                    <div class="subject">
-                        Русский язык
+                    <div class="swiper_wrapper">
+                        <div class="subject swiper-slide">
+                            Русский язык
+                        </div>
+                        <div class="subject swiper-slide">
+                            Английский
+                        </div>
+                        <div class="subject swiper-slide">
+                            История
+                        </div>
                     </div>
-                    <svg class="next" width="26" height="39" viewBox="0 0 26 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="next swiper-next" width="26" height="39" viewBox="0 0 26 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.99414 39L-1.90735e-06 35.4593L18 19.5026L-1.90735e-06 3.54593L4 0L26 19.5026L3.99414 39Z" fill="#404040"/>
                     </svg>
                 </div>
@@ -223,7 +355,7 @@
             </div>
         </div>
         <div class="block">
-            <img class="img" src="media/bro.png" alt="">
+            <img class="img" src="media/eng.png" alt="">
 
             <div class="inf">
                 <div class="name">
@@ -231,7 +363,7 @@
                 </div>
     
                 <a href="https://vk.com/astra.school" class="btn_enroll btn_enroll--white">
-                    Смотреть программу
+                    Записаться на курс
                 </a>
             </div>
         </div>
@@ -280,9 +412,9 @@
                     </div>
                 </div>
                 <div class="img">
-                    <img src="media/tab_cont1.jpg" alt="">
+                    <img src="media/vebinar.jpeg" alt="">
 
-                    <img src="media/tab_cont2.jpg" alt="" class="parralax_img parralax_img--one" data-speed="1">
+                    <img src="media/group.jpeg" alt="" class="parralax_img parralax_img--one" data-speed="1">
 
                     <div class="parralax_img parralax_img--two" data-speed="-3">
                         <img src="/media/@.svg" alt="">
@@ -298,21 +430,21 @@
             <div class="tabs_content-wr" x-show="tab === 2">
                 <div class="inf">
                     <div class="name">
-                        Вебинары
+                        Группа
                     </div>
                     <div class="descr">
                         <p>
-                            Вы получите доступ к видеоурокам, после просмотра каждого из которых необходимо выполнить домашнее задание. Репетитор будет проверять Ваши работы и давать обратную связь через чат.
+                            Онлайн-занятия в группе. Постоянный доступ к записям уроков. Сохраняется прямое взаимодействие с репетитором как на занятиях, так и в чате во внеучебное время. Вы получите регулярные домашние задания с проверкой и подробной обратной связью. 
                         </p>
                         <p>
-                            В ходе прохождения курса Вы будете получать авторские конспекты по пройденным темам. После изучения всех тем Вам будет предложено написать пробник для оценки собственных знаний.
+                            В ходе прохождения курса Вы будете получать авторские конспекты по пройденным темам, а также напишете 2 пробника для контроля качества полученных знаний.
                         </p>
                     </div>
                 </div>
                 <div class="img">
-                    <img src="media/tab_cont2.jpg" alt="">
+                    <img src="media/group.jpeg" alt="">
 
-                    <img src="media/tab_cont3.jpg" alt="" class="parralax_img parralax_img--one" data-speed="2">
+                    <img src="media/top_group.jpeg" alt="" class="parralax_img parralax_img--one" data-speed="2">
 
                     <!-- <div class="parralax_img parralax_img--two" data-speed="-3">
                         <img src="/media/Rectangle 62.png" alt="" >
@@ -329,21 +461,21 @@
             <div class="tabs_content-wr" x-show="tab === 3">
                 <div class="inf">
                     <div class="name">
-                        Вебинары
+                        ТОП-группа
                     </div>
                     <div class="descr">
                         <p>
-                            Вы получите доступ к видеоурокам, после просмотра каждого из которых необходимо выполнить домашнее задание. Репетитор будет проверять Ваши работы и давать обратную связь через чат.
+                            Онлайн-занятия в группе. Постоянный доступ к записям уроков. Сохраняется прямое взаимодействие с репетитором как на занятиях, так и в чате во внеучебное время. Вы получите регулярные домашние задания с проверкой и подробной обратной связью. После прохождения каждой темы Вы получите авторские конспекты и полезные чек-листы, доступ ко всем вебинарам и мастер-классам от нашей команды.
                         </p>
                         <p>
-                            В ходе прохождения курса Вы будете получать авторские конспекты по пройденным темам. После изучения всех тем Вам будет предложено написать пробник для оценки собственных знаний.
+                            В ходе обучения Вы напишете 4 пробника для контроля качества полученных знаний. ЕСЛИ ВЫ НЕ ПОЛУЧИТЕ ЖЕЛАЕМОГО РЕЗУЛЬТАТА НА ЭКЗАМЕНЕ, ТО МЫ ВЕРНЕМ ДЕНЬГИ.
                         </p>
                     </div>
                 </div>
                 <div class="img">
-                    <img src="media/tab_cont3.jpg" alt="">
+                    <img src="media/top_group.jpeg" alt="">
 
-                    <img src="media/tab_cont1.jpg" alt="" class="parralax_img parralax_img--one" data-speed="1">
+                    <img src="media/vebinar.jpeg" alt="" class="parralax_img parralax_img--one" data-speed="1">
 
                     <div class="parralax_img parralax_img--two" data-speed="-3">
                         <img src="/media/@.svg" alt="">
@@ -487,6 +619,11 @@
 
         <ul class="cont_wr">
             <li class="cont_wr-it">
+                <a href="https://docs.google.com/spreadsheets/d/1RGqVpC3o3JCd5Jm3ph_4wB5zOtCbkUDLGbYgSr7zfCA/edit#gid=0">
+                    Тарифы обучения
+                </a>
+            </li>
+            <li class="cont_wr-it">
                 <a href="#">
                     astra_school@gmail.com
                 </a>
@@ -506,19 +643,27 @@
                     WhatsApp
                 </a>
             </li>
-
-            <!-- <li class="cont_wr-it--docs">
-                <a href="#">
-                    Обработка персональных данных
+            <li class="cont_wr-it">
+                <a download href="docs/ПУБЛИЧНАЯ ОФЕРТА.pdf">
+                    Публичная оферта
                 </a>
             </li>
-            <li class="cont_wr-it--docs">
-                <a href="#">
-                    Условия оферты
+            <li class="cont_wr-it">
+                <a download href="docs/ПОЛИТИКА_ОБРАБОТКИ_ПЕРСОНАЛЬНЫХ_ДАННЫХ.pdf">
+                    Политика обработки персональных данных
                 </a>
-            </li> -->
+            </li>
         </ul>
     </footer>
+    <div class="ip_inf">
+        ИП Троценко Эвелина Витальевна  <br>
+        ИНН: 550722400733  <br>
+        ОГРНИП: 323554300033892 <br>
+    </div>
+
+    <!-- ИП Троценко Эвелина Витальевна 
+    ИНН: 550722400733 
+    ОГРНИП: 323554300033892 -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -540,6 +685,26 @@
         //         end:'+=10000',
         //     }
         // })
+
+        // Menu burger  ===
+        const burger = document.querySelector('.burger')
+        let tl_burger = gsap.timeline({ paused: true })
+
+        tl_burger.to('.menu_mobile', {
+            display: 'block',
+            duration: .2
+        })
+        tl_burger.from('.menu_wr', {
+            y: '-100%',
+            duration: .4
+        })
+
+        tl_burger.reverse();
+
+        burger.addEventListener('click', () => {
+            tl_burger.reversed(!tl_burger.reversed());
+        });
+        // /Menu burger  ===
 
         // Accordion ===
         gsap.set('.cont', { autoAlpha: 0, height: 0 });
@@ -566,7 +731,7 @@
         })
         // /Accordion ===
 
-        // Parallax
+        // Parallax ===
         if(window.innerWidth > 1100) {
             document. addEventListener("mousemove", parallax);
             function parallax(e) {
@@ -580,7 +745,85 @@
             });
         }
         }
-        // /Parallax
+        // /Parallax ===
+
+        // Popup ===
+        const btn_enroll = gsap.utils.toArray(".btn--primary");
+        const btn_free = gsap.utils.toArray(".btn--secondary");
+        
+
+        btn_enroll.forEach(btn => {
+            const popup_tl = gsap.timeline()
+            btn.addEventListener('click', ()=> {
+                popup_tl.to('.popup', {
+                    display: 'flex',
+                    opacity: 1,
+                    duration: .5
+                })
+            })
+            const close_btn = document.getElementById('close_popup')
+            console.log(close_btn);
+
+            close_btn.addEventListener('click', ()=> {
+                popup_tl.reverse()
+            })
+        })
+
+        btn_free.forEach(btn => {
+            const popup_tl = gsap.timeline()
+            btn.addEventListener('click', ()=> {
+                popup_tl.to('.popup', {
+                    display: 'flex',
+                    opacity: 1,
+                    duration: .5
+                })
+            })
+            const close_btn = document.getElementById('close_popup2')
+            console.log(close_btn);
+
+            close_btn.addEventListener('click', ()=> {
+                popup_tl.reverse()
+            })
+        })
+
+        // function popUpVisible() {
+        //     const popup_tl = gsap.timeline()
+        //     popup_tl.to('.popup', {
+        //         display: 'flex',
+        //         opacity: 1,
+        //         duration: 4
+        //     })
+        // }
+
+        // /Popup ===
+
+        // Swiper ===
+        const swiper_cards = new Swiper('.swiper_cards', {
+
+            loop: true,
+            spaceBetween: 60,
+            autoHeight: true,
+
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+        })
+
+        const swiper_names = new Swiper('.swiper_names', {
+
+            loop: true,
+            spaceBetween: 60,
+            autoHeight: true,
+
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+        })
+        // /Swiper ===
+
     </script>
+    
 </body>
 </html>

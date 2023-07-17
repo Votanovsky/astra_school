@@ -55,6 +55,20 @@
             @media  (max-width: $breakpoint-lg-min) {
                 font-size: 16px;
             }
+            &:first-child {
+                // text-transform: uppercase;
+                text-decoration: underline;
+            }
         }
+    }
+}
+.ip_inf {
+    border-top: 1px solid $color-white;
+    padding: 20px 30px 30px;
+    background: $color-blue;
+    font-size: 22px;
+    @media  (max-width: $breakpoint-sm-min) {
+        padding: 10px 15px 10px;
+        font-size: 16px;
     }
 }
