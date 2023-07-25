@@ -20,6 +20,7 @@ $breakpoint-md-min: 768px;
 $breakpoint-lg-min: 992px;
 $breakpoint-xl-min: 1200px;
 $breakpoint-xxl-min: 1400px;
+$breakpoint-xx-min: 1920px;
 
 $breakpoint-xs-max: $breakpoint-xs-min - 1px;
 $breakpoint-s-max: $breakpoint-sm-min - 1px;
@@ -27,6 +28,7 @@ $breakpoint-sm-max: $breakpoint-md-min - 1px;
 $breakpoint-md-max: $breakpoint-lg-min - 1px;
 $breakpoint-lg-max: $breakpoint-xl-min - 1px;
 $breakpoint-xl-max: $breakpoint-xxl-min - 1px;
+$breakpoint-xx-max: $breakpoint-xx-min - 1px;
 // === /Adaptive breakpoints ===
 
 // fonts
@@ -116,3 +118,8 @@ li {
 @import 'scss/sec_six.scss';
 @import 'scss/footer.scss';
 @import 'scss/popup.scss';
+
+
+// .container {
+//     max-width: 1540px;
+// }

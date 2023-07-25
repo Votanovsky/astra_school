@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
 
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="style.css">
 
     <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.297/build/spline-viewer.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
@@ -68,12 +68,26 @@
     
             <nav class="nav">
                 <ul class="ul">
-                    <li class="li">Курсы</li>
-                    <li class="li">Форматы</li>
-                    <li class="li">Предметы</li>
+                    <li class="li">
+                        <a href="#kursy" class="achors">Курсы</a>
+                    </li>
+                    <li class="li">
+                        <a href="#formats" class="achors">
+                            Форматы
+                        </a>
+                    </li>
+                    <li class="li">
+                        <a href="#faq" class="achors">
+                            FAQ
+                        </a>
+                    </li>
                 </ul>
     
-                <div>Контакты</div>
+                <div>
+                    <a href="#contacts" class="achors">
+                        Контакты
+                    </a>
+                </div>
             </nav>
 
             <div class="burger">
@@ -86,10 +100,24 @@
 
     <div class="menu_mobile">
         <ul class="menu_wr">
-            <li class="menu_wr-it">Курсы</li>
-            <li class="menu_wr-it">Форматы</li>
-            <li class="menu_wr-it">Предметы</li>
-            <li class="menu_wr-it">Контакты</li>
+            <li class="menu_wr-it">
+                <a href="#kursy" class="achors">Курсы</a>
+            </li>
+            <li class="menu_wr-it">
+                <a href="#formats" class="achors">
+                    Форматы
+                </a>
+            </li>
+            <li class="menu_wr-it">
+                <a href="#faq" class="achors">
+                    FAQ
+                </a>
+            </li>
+            <li class="menu_wr-it">
+                <a href="#contacts" class="achors">
+                    Контакты
+                </a>
+            </li>
         </ul>
     </div>
     
@@ -147,8 +175,8 @@
             <!-- <spline-viewer style="border-radius: 30px;" url="https://prod.spline.design/LEJoCNQG1lmOSEUA/scene.splinecode"></spline-viewer> -->
 
             <div class="btn_wr">
-                <button class="btn btn--primary">Начать обучение</button>
-                <button class="btn btn--secondary">Бесплатный урок</button>
+                <a href="https://vk.com/astra.school" class="btn btn--primary">Начать обучение</a>
+                <a href="https://vk.com/astra.school" class="btn btn--secondary">Бесплатный урок</a>
             </div>
         </div>
 
@@ -166,8 +194,8 @@
             </div> -->
 
             <div class="btn_wr">
-                <button class="btn btn--primary">Начать обучение</button>
-                <button class="btn btn--secondary">Бесплатный урок</button>
+                <a href="https://vk.com/astra.school" class="btn btn--primary">Начать обучение</a>
+                <a href="https://vk.com/astra.school" class="btn btn--secondary">Бесплатный урок</a>
             </div>
         </div>
     </section>
@@ -182,8 +210,61 @@
         </div>
     </section>
 
-    <section class="section_three">
+    <section class="section_three" id="kursy">
         <div class="swiper_cards">
+            <div class="promptBox">
+                <div class="tapperoo"></div>
+                <svg version="1.1" id="tap-gesture" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#fff">
+                <g>
+                    <g>
+                        <path d="M416,149.333c-8.768,0-16.939,2.667-23.723,7.211C386.432,139.947,370.581,128,352,128
+                            c-8.768,0-16.939,2.667-23.723,7.211c-5.845-16.597-21.696-28.544-40.277-28.544c-7.765,0-15.061,2.091-21.333,5.739V42.667
+                            C266.667,19.136,247.531,0,224,0s-42.667,19.136-42.667,42.667v249.408l-58.645-29.333C113.856,258.325,103.957,256,94.08,256
+                            c-22.485,0-40.747,18.283-40.747,40.875c0,10.901,4.245,21.12,11.947,28.821l137.941,137.941C234.389,494.827,275.883,512,320,512
+                            c76.459,0,138.667-62.208,138.667-138.667V192C458.667,168.469,439.531,149.333,416,149.333z M437.333,373.333
+                            c0,64.704-52.651,117.333-117.355,117.333c-38.421,0-74.517-14.955-101.653-42.133L80.363,310.592
+                            c-3.669-3.648-5.696-8.533-5.696-13.845c0-10.709,8.704-19.413,19.413-19.413c6.592,0,13.163,1.557,19.072,4.501l74.091,37.035
+                            c3.307,1.643,7.253,1.472,10.368-0.469c3.136-1.941,5.056-5.376,5.056-9.067V42.667c0-11.755,9.557-21.333,21.333-21.333
+                            s21.333,9.579,21.333,21.333v202.667c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667v-96
+                            c0-11.755,9.557-21.333,21.333-21.333s21.333,9.579,21.333,21.333v96c0,5.888,4.779,10.667,10.667,10.667
+                            s10.667-4.779,10.667-10.667v-74.667c0-11.755,9.557-21.333,21.333-21.333s21.333,9.579,21.333,21.333v74.667
+                            c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V192c0-11.755,9.557-21.333,21.333-21.333
+                            s21.333,9.579,21.333,21.333V373.333z"/>
+                    </g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                </svg>
+            </div>
             <div class="slider_wr swiper-wrapper">
                 <div class="slide slide--obch swiper-slide">
     
@@ -309,7 +390,7 @@
                     <svg class="prev swiper-prev" width="26" height="39" viewBox="0 0 26 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0059 39L26 35.4593L8 19.5026L26 3.54593L22 0L0 19.5026L22.0059 39Z" fill="#404040"/>
                     </svg>
-                    <div class="swiper_wrapper">
+                    <div class="swipes_lesson swiper-pagination">
                         <div class="subject swiper-slide">
                             Русский язык
                         </div>
@@ -362,7 +443,7 @@
             </div>
         </div>
         <div class="block">
-            <img class="img" src="media/eng.png" alt="">
+            <img class="img" src="media/eng2.png" alt="">
 
             <div class="inf">
                 <div class="name">
@@ -376,7 +457,7 @@
         </div>
     </section>
 
-    <div class="section_five">
+    <div class="section_five" id="formats">
         <div class="title_h2">
             Занятия будут проходить в одном из трех форматов на Ваш выбор: вебинар, группа и ТОП-группа.
         </div>
@@ -500,7 +581,7 @@
         
     </div>
 
-    <div class="section_six">
+    <div class="section_six" id="faq">
         <div class="faq">
             <div class="faq_up">
                 <div class="title_h2">
@@ -618,7 +699,7 @@
     </div>
 
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
 
         <h3 class="h3_title">
             Контакты:
@@ -631,23 +712,8 @@
                 </a>
             </li>
             <li class="cont_wr-it">
-                <a href="#">
-                    astra_school@gmail.com
-                </a>
-            </li>
-            <li class="cont_wr-it">
-                <a href="#">
-                    Telegram
-                </a>
-            </li>
-            <li class="cont_wr-it">
-                <a href="https://vk.com/astra.school">
-                    VKontakte
-                </a>
-            </li>
-            <li class="cont_wr-it">
-                <a href="#">
-                    WhatsApp
+                <a href="support@astraschool.online">
+                    support@astraschool.online
                 </a>
             </li>
             <li class="cont_wr-it">
@@ -656,8 +722,18 @@
                 </a>
             </li>
             <li class="cont_wr-it">
+                <a href="https://vk.com/astra.school">
+                    VKontakte
+                </a>
+            </li>
+            <li class="cont_wr-it">
                 <a download href="docs/ПОЛИТИКА_ОБРАБОТКИ_ПЕРСОНАЛЬНЫХ_ДАННЫХ.pdf">
                     Политика обработки персональных данных
+                </a>
+            </li>
+            <li class="cont_wr-it">
+                <a href="https://t.me/astraschoolonline ">
+                    Telegram
                 </a>
             </li>
         </ul>
@@ -692,6 +768,23 @@
         //         end:'+=10000',
         //     }
         // })
+
+        // Smooth Scroll  ===
+        const achors = document.querySelectorAll('.achors')
+        achors.forEach(achor => {
+            achor.addEventListener('click', (e)=> {
+                e.preventDefault()
+
+                const section = achor.getAttribute('href')
+                document.querySelector('' + section).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
+
+                tl_burger.reverse();
+            })
+        })
+        // /Smooth Scroll  ===
 
         // Menu burger  ===
         const burger = document.querySelector('.burger')
@@ -755,43 +848,42 @@
         // /Parallax ===
 
         // Popup ===
-        const btn_enroll = gsap.utils.toArray(".btn--primary");
-        const btn_free = gsap.utils.toArray(".btn--secondary");
+        // const btn_enroll = gsap.utils.toArray(".btn--primary");
+        // const btn_free = gsap.utils.toArray(".btn--secondary");
         
 
-        btn_enroll.forEach(btn => {
-            const popup_tl = gsap.timeline()
-            btn.addEventListener('click', ()=> {
-                popup_tl.to('.popup', {
-                    display: 'flex',
-                    opacity: 1,
-                    duration: .5
-                })
-            })
-            const close_btn = document.getElementById('close_popup')
-            console.log(close_btn);
+        // btn_enroll.forEach(btn => {
+        //     const popup_tl = gsap.timeline()
+        //     btn.addEventListener('click', ()=> {
+        //         popup_tl.to('.popup', {
+        //             display: 'flex',
+        //             opacity: 1,
+        //             duration: .5
+        //         })
+        //     })
+        //     const close_btn = document.getElementById('close_popup')
 
-            close_btn.addEventListener('click', ()=> {
-                popup_tl.reverse()
-            })
-        })
+        //     close_btn.addEventListener('click', ()=> {
+        //         popup_tl.reverse()
+        //     })
+        // })
 
-        btn_free.forEach(btn => {
-            const popup_tl = gsap.timeline()
-            btn.addEventListener('click', ()=> {
-                popup_tl.to('.popup', {
-                    display: 'flex',
-                    opacity: 1,
-                    duration: .5
-                })
-            })
-            const close_btn = document.getElementById('close_popup2')
-            console.log(close_btn);
+        // btn_free.forEach(btn => {
+        //     const popup_tl = gsap.timeline()
+        //     btn.addEventListener('click', ()=> {
+        //         popup_tl.to('.popup', {
+        //             display: 'flex',
+        //             opacity: 1,
+        //             duration: .5
+        //         })
+        //     })
+        //     const close_btn = document.getElementById('close_popup2')
 
-            close_btn.addEventListener('click', ()=> {
-                popup_tl.reverse()
-            })
-        })
+        //     close_btn.addEventListener('click', ()=> {
+        //         popup_tl.reverse()
+        //     })
+        // })
+        // Popup ===
 
         // function popUpVisible() {
         //     const popup_tl = gsap.timeline()
@@ -815,20 +907,15 @@
                 nextEl: '.swiper-next',
                 prevEl: '.swiper-prev',
             },
+            // pagination: {
+            // el: '.swiper-pagination',
+            //         clickable: true,
+            //     renderBullet: function (index, className) {
+            //     return '<span class="' + className + '">' + (menu[index]) + '</span>';
+            //     },
+            // },
         })
 
-        const swiper_names = new Swiper('.swiper_names', {
-
-            loop: true,
-            spaceBetween: 60,
-            autoHeight: true,
-
-            navigation: {
-                nextEl: '.swiper-next',
-                prevEl: '.swiper-prev',
-            },
-        })
-        // /Swiper ===
 
     </script>
     

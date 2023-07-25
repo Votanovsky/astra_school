@@ -759,7 +759,6 @@ li {
   align-items: center;
   font-family: "H_roman";
   font-size: 28px;
-  width: 260px;
 }
 @media (max-width: 992px) {
   .section_three .control_panel .btns {

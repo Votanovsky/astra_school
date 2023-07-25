@@ -4,6 +4,9 @@
     display: flex;
     overflow: hidden;
     // background: #000;
+    @media  (min-width: $breakpoint-xx-min) {
+        padding: 60px 180px 110px;
+    }
     @media  (max-width: $breakpoint-xl-min) {
         padding: 60px 30px 110px;
     }
