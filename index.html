@@ -121,12 +121,12 @@
         </ul>
     </div>
     
-    <div class="popup popup--1">
+    <div class="popup">
         <div class="wr_popup">
             <img src="media/ru_lang.png" alt="" class="popup_img popup_img--1">
             <img src="media/megaphone.png" alt="" class="popup_img popup_img--2">
             <div class="popup_form">
-                <div id="close_popup" class="close_popup">
+                <div class="close_popup">
                     &#10005;
                 </div>
                 <div class="name">
@@ -144,16 +144,17 @@
             </div>
         </div>
     </div>
-    <div class="popup popup--2">
-        <div class="wr_popup">
-            <img src="media/ru_lang.png" alt="" class="popup_img popup_img--1">
+
+    <div class="popup2">
+        <div class="wr_popup2">
+            <img src="media/angl_zero2.png" alt="" class="popup_img popup_img--1">
             <img src="media/megaphone.png" alt="" class="popup_img popup_img--2">
             <div class="popup_form">
-                <div id="close_popup2" class="close_popup">
+                <div class="close_popup">
                     &#10005;
                 </div>
                 <div class="name">
-                    Записаться на <br> консультацию
+                    Записаться на беслатный урок
                 </div>
                 <form action="#">
                     <input class="input" type="text" placeholder="Имя">
@@ -171,12 +172,12 @@
 
     <section class="section_one">
         <div class="l">
-            <img src="/media/canvas_bg.jpg" alt="">
-            <!-- <spline-viewer style="border-radius: 30px;" url="https://prod.spline.design/LEJoCNQG1lmOSEUA/scene.splinecode"></spline-viewer> -->
+            <!-- <img src="/media/canvas_bg.jpg" alt=""> -->
+            <spline-viewer style="border-radius: 30px;" url="https://prod.spline.design/LEJoCNQG1lmOSEUA/scene.splinecode"></spline-viewer>
 
             <div class="btn_wr">
-                <a href="https://vk.com/astra.school" class="btn btn--primary">Начать обучение</a>
-                <a href="https://vk.com/astra.school" class="btn btn--secondary">Бесплатный урок</a>
+                <button class="btn btn--primary">Начать обучение</button>
+                <button class="btn btn--secondary">Бесплатный урок</button>
             </div>
         </div>
 
@@ -194,8 +195,8 @@
             </div> -->
 
             <div class="btn_wr">
-                <a href="https://vk.com/astra.school" class="btn btn--primary">Начать обучение</a>
-                <a href="https://vk.com/astra.school" class="btn btn--secondary">Бесплатный урок</a>
+                <button class="btn btn--primary">Начать обучение</button>
+                <button class="btn btn--secondary">Бесплатный урок</button>
             </div>
         </div>
     </section>
@@ -443,7 +444,7 @@
             </div>
         </div>
         <div class="block">
-            <img class="img" src="media/eng2.png" alt="">
+            <img class="img" src="media/angl_zero2.png" alt="">
 
             <div class="inf">
                 <div class="name">
@@ -847,55 +848,6 @@
         }
         // /Parallax ===
 
-        // Popup ===
-        // const btn_enroll = gsap.utils.toArray(".btn--primary");
-        // const btn_free = gsap.utils.toArray(".btn--secondary");
-        
-
-        // btn_enroll.forEach(btn => {
-        //     const popup_tl = gsap.timeline()
-        //     btn.addEventListener('click', ()=> {
-        //         popup_tl.to('.popup', {
-        //             display: 'flex',
-        //             opacity: 1,
-        //             duration: .5
-        //         })
-        //     })
-        //     const close_btn = document.getElementById('close_popup')
-
-        //     close_btn.addEventListener('click', ()=> {
-        //         popup_tl.reverse()
-        //     })
-        // })
-
-        // btn_free.forEach(btn => {
-        //     const popup_tl = gsap.timeline()
-        //     btn.addEventListener('click', ()=> {
-        //         popup_tl.to('.popup', {
-        //             display: 'flex',
-        //             opacity: 1,
-        //             duration: .5
-        //         })
-        //     })
-        //     const close_btn = document.getElementById('close_popup2')
-
-        //     close_btn.addEventListener('click', ()=> {
-        //         popup_tl.reverse()
-        //     })
-        // })
-        // Popup ===
-
-        // function popUpVisible() {
-        //     const popup_tl = gsap.timeline()
-        //     popup_tl.to('.popup', {
-        //         display: 'flex',
-        //         opacity: 1,
-        //         duration: 4
-        //     })
-        // }
-
-        // /Popup ===
-
         // Swiper ===
         const swiper_cards = new Swiper('.swiper_cards', {
 
@@ -916,8 +868,81 @@
             // },
         })
 
+        // const none_logo = document.querySelector('#logo')
+        // console.log(none_logo);
 
+        // console.log(btn_prm);
+
+
+        // PopUp 1 ===
+        const btn_prm = document.querySelectorAll('.btn--primary')
+
+        const close_popup = document.querySelectorAll('.close_popup')
+
+        btn_prm.forEach((e)=> {
+            e.addEventListener('click', ()=> {
+                const popup_tl = gsap.timeline()
+
+                popup_tl.to('.popup', {
+                    display: 'flex',
+                    opacity: 1,
+                })
+                popup_tl.to('.wr_popup', {
+                    y: 0
+                })
+            })
+        })
+
+        const btn_sec = document.querySelectorAll('.btn--secondary')
+
+        btn_sec.forEach((e)=> {
+            e.addEventListener('click', ()=> {
+                const popup_tl = gsap.timeline()
+
+                popup_tl.to('.popup2', {
+                    display: 'flex',
+                    opacity: 1,
+                })
+                popup_tl.to('.wr_popup2', {
+                    y: 0
+                })
+            })
+        })
+
+        close_popup.forEach((e)=> {
+            e.addEventListener('click',()=> {
+                const popup_tl = gsap.timeline()
+                popup_tl.to('.wr_popup', {
+                    y: '100%'
+                })
+                popup_tl.to('.popup', {
+                    display: 'none',
+                    opacity: 0,
+                })
+            })
+        })
+        close_popup.forEach((e)=> {
+            e.addEventListener('click',()=> {
+                const popup_tl = gsap.timeline()
+                popup_tl.to('.wr_popup2', {
+                    y: '100%'
+                })
+                popup_tl.to('.popup2', {
+                    display: 'none',
+                    opacity: 0,
+                })
+            })
+        })
+
+        // PopUp 2 ===
     </script>
     
+    <style>
+        #logo {
+            display: block !important;
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
 </body>
 </html>

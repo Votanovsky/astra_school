@@ -133,14 +133,21 @@
         } 
         .img {
             position: absolute;
-            height: 80%;
-            margin-bottom: 40px;
-            left: 40px;
+            height: auto;
+            width: 500px;
+            max-width: 550px;
+            // margin-bottom: 40px;
+            left: 80px;
             transition: .4s ease-out;
-            bottom: 0;
+            bottom: 4%;
+            @media  (min-width: $breakpoint-xxl-min) {
+                width: 550px;
+                max-width: 550px;
+            }
             @media  (max-width: $breakpoint-xxl-min) {
                 height: auto;
                 width: 40%;
+                left: 40px;
             }
             @media  (max-width: $breakpoint-md-min) {
                 width: 70%;

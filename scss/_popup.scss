@@ -9,9 +9,9 @@
     // margin-top: 20%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    opacity: 0;
+    align-items: flex-end;
     display: none;
+    opacity: 0;
     .wr_popup {
         background: $color-white;
         border-radius: 30px 30px 0px 0px;
@@ -21,6 +21,12 @@
         box-shadow: -4px -4px 5px 0px rgba(8, 8, 8, 0.11);
         position: relative;
         overflow: hidden;
+        transform: translateY(100%);
+        max-height: 950px;
+        @media  (max-width: $breakpoint-md-min) {
+            margin: 70px 0 0;
+            max-height: 680px;
+        }
         .popup_img {
             position: absolute;
             object-fit: contain;
@@ -28,11 +34,20 @@
                 left: -5%;
                 bottom: 20%;
                 width: 55%;
+                max-width: 900px;
+                @media  (max-width: $breakpoint-md-min) {
+                    width: 100%;
+                    left: -2%;
+                }
             }
             &--2 {
                 right: 2%;
                 bottom: 20%;
                 width: 30%;
+                max-width: 600px;
+                @media  (max-width: $breakpoint-md-min) {
+                    display: none;
+                }
             }
         }
         .popup_form {
@@ -44,6 +59,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            @media  (max-width: $breakpoint-md-min) {
+                padding: 30px 0;
+            }
             .close_popup {
                 position: absolute;
                 right: 30px;
@@ -59,6 +77,13 @@
                 border-radius: 100%;
                 padding-top: 5px;
                 transition: .2s;
+                @media  (max-width: $breakpoint-md-min) {
+                    width: 45px;
+                    height: 45px;
+                    font-size: 30px;
+                    right: 15px;
+                    top: 15px;
+                }
                 &:hover {
                     cursor: pointer;
                     // background: #b1b1b1;
@@ -78,6 +103,11 @@
                 // -webkit-text-fill-color: transparent;
                 line-height: 44px;
                 margin-bottom: 80px;
+                @media  (max-width: $breakpoint-md-min) {
+                    font-size: 36px;
+                    line-height: 36px;
+                    margin-bottom: 40px;
+                }
             }
             form {
                 display: flex;
@@ -85,6 +115,189 @@
                 align-items: center;
                 flex-direction: column;
                 width: 540px;
+                @media  (max-width: $breakpoint-md-min) {
+                    width: 100%;
+                    padding: 0 13px;
+                }
+                input {
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 20px;
+                    margin-bottom: 20px;
+                    padding-left: 10px;
+                    font-size: 18px;
+                    outline: none;
+                    border: 3px solid rgba(60, 60, 60, 0.203);
+                    transition: .18s;
+                    
+                    &::placeholder { 
+                        color: rgba(60, 60, 60, 0.641);
+                        opacity: 1; 
+                        font-family: 'H_condensed_bold'; 
+                    }
+                    &:focus {
+                        border: 3px solid $color-blue;
+                        transition: .18s;
+                        &::placeholder { 
+                            color: $color-blue;
+                            opacity: 1; 
+                        }
+                    }
+                    &:hover {
+                        border: 3px solid $color-blue;
+                        transition: .18s;
+                        &::placeholder { 
+                            color: $color-blue;
+                            opacity: 1; 
+                        }
+                    }
+
+                }
+
+                .form_submit {
+                    width: 100%;
+                    height: 80px;
+                    background: $color-blue;
+                    color: $color-white;
+                    border-radius: 20px;
+                    font-size: 24px;
+                    font-family: 'H_condensed_bold'; 
+                    outline: none;
+                    border: none;
+                    transition: .2s;
+                    &:hover {
+                        cursor: pointer;
+                        background: darken($color-blue, 10);
+                        transition: .2s;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.popup2 {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.203);
+    backdrop-filter: blur(.5px);
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    // margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    display: none;
+    opacity: 0;
+    .wr_popup2 {
+        background: $color-white;
+        border-radius: 30px 30px 0px 0px;
+        width: 100%;
+        height: 100%;
+        margin: 25% 30px 0;
+        box-shadow: -4px -4px 5px 0px rgba(8, 8, 8, 0.11);
+        position: relative;
+        overflow: hidden;
+        transform: translateY(100%);
+        max-height: 950px;
+        @media  (max-width: $breakpoint-md-min) {
+            margin: 70px 0 0;
+            max-height: 680px;
+        }
+        .popup_img {
+            position: absolute;
+            object-fit: contain;
+            &--1 {
+                left: -5%;
+                bottom: 20%;
+                width: 55%;
+                max-width: 900px;
+                @media  (max-width: $breakpoint-md-min) {
+                    width: 100%;
+                    left: -2%;
+                }
+            }
+            &--2 {
+                right: 2%;
+                bottom: 20%;
+                width: 30%;
+                max-width: 600px;
+                @media  (max-width: $breakpoint-md-min) {
+                    display: none;
+                }
+            }
+        }
+        .popup_form {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            padding: 60px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media  (max-width: $breakpoint-md-min) {
+                padding: 30px 0;
+            }
+            .close_popup {
+                position: absolute;
+                right: 30px;
+                top: 25px;
+                font-size: 40px;
+                color: $color-white;
+                width: 70px;
+                height: 70px;
+                background: #cacaca;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                padding-top: 5px;
+                transition: .2s;
+                @media  (max-width: $breakpoint-md-min) {
+                    width: 45px;
+                    height: 45px;
+                    font-size: 30px;
+                    right: 15px;
+                    top: 15px;
+                }
+                &:hover {
+                    cursor: pointer;
+                    // background: #b1b1b1;
+                    background: $color-blue;
+                    transition: .2s;
+                    transform: rotate(225deg);
+                }
+            }
+            .name {
+                font-size: 56px;
+                text-align: center;
+                font-family: 'H_condensed_bold'; 
+                // background: #4773E8;
+                color: $color-blue;
+                // background: linear-gradient(to bottom right, #4773E8 29%, #9C27F3 100%);
+                // -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
+                line-height: 44px;
+                margin-bottom: 80px;
+                @media  (max-width: $breakpoint-md-min) {
+                    font-size: 36px;
+                    line-height: 36px;
+                    margin-bottom: 40px;
+                    width: 80%;
+                }
+            }
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 540px;
+                @media  (max-width: $breakpoint-md-min) {
+                    width: 100%;
+                    padding: 0 13px;
+                }
                 input {
                     width: 100%;
                     height: 60px;

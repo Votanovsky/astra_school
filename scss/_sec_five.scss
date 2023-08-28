@@ -203,6 +203,8 @@
 
                 .parralax_img {
                     position: absolute;
+                    display: none;
+                    visibility: hidden;
                     &--one {
                         width: 130px;
                         height: 130px;
