@@ -22,19 +22,23 @@
         position: relative;
         overflow: hidden;
         transform: translateY(100%);
-        max-height: 950px;
+        max-height: 670px;
+        @media  (min-width: $breakpoint-xx-min) {
+            margin: 25% 180px 0;
+        }
         @media  (max-width: $breakpoint-md-min) {
-            margin: 70px 0 0;
-            max-height: 680px;
+            margin: 0 0 0;
+            max-height: auto;
+            height: auto;
         }
         .popup_img {
             position: absolute;
             object-fit: contain;
             &--1 {
                 left: -5%;
-                bottom: 20%;
+                bottom: 5%;
                 width: 55%;
-                max-width: 900px;
+                max-width: 800px;
                 @media  (max-width: $breakpoint-md-min) {
                     width: 100%;
                     left: -2%;
@@ -42,9 +46,9 @@
             }
             &--2 {
                 right: 2%;
-                bottom: 20%;
+                bottom: 10%;
                 width: 30%;
-                max-width: 600px;
+                max-width: 500px;
                 @media  (max-width: $breakpoint-md-min) {
                     display: none;
                 }
@@ -60,7 +64,7 @@
             flex-direction: column;
             align-items: center;
             @media  (max-width: $breakpoint-md-min) {
-                padding: 30px 0;
+                padding: 30px 0 140px;
             }
             .close_popup {
                 position: absolute;
@@ -129,7 +133,11 @@
                     outline: none;
                     border: 3px solid rgba(60, 60, 60, 0.203);
                     transition: .18s;
-                    
+                    @media  (max-width: $breakpoint-md-min) {
+                        font-size: 16px;
+                        height: 50px;
+                        border-radius: 15px;
+                    }
                     &::placeholder { 
                         color: rgba(60, 60, 60, 0.641);
                         opacity: 1; 
@@ -165,6 +173,11 @@
                     outline: none;
                     border: none;
                     transition: .2s;
+                    @media  (max-width: $breakpoint-md-min) {
+                        height: 60px;
+                        font-size: 20px;
+                        border-radius: 15px;
+                    }
                     &:hover {
                         cursor: pointer;
                         background: darken($color-blue, 10);
@@ -190,7 +203,7 @@
     align-items: flex-end;
     display: none;
     opacity: 0;
-    .wr_popup2 {
+    .wr_popup2{
         background: $color-white;
         border-radius: 30px 30px 0px 0px;
         width: 100%;
@@ -200,19 +213,23 @@
         position: relative;
         overflow: hidden;
         transform: translateY(100%);
-        max-height: 950px;
+        max-height: 670px;
+        @media  (min-width: $breakpoint-xx-min) {
+            margin: 25% 180px 0;
+        }
         @media  (max-width: $breakpoint-md-min) {
-            margin: 70px 0 0;
-            max-height: 680px;
+            margin: 0 0 0;
+            max-height: auto;
+            height: auto;
         }
         .popup_img {
             position: absolute;
             object-fit: contain;
             &--1 {
                 left: -5%;
-                bottom: 20%;
+                bottom: 5%;
                 width: 55%;
-                max-width: 900px;
+                max-width: 800px;
                 @media  (max-width: $breakpoint-md-min) {
                     width: 100%;
                     left: -2%;
@@ -220,9 +237,9 @@
             }
             &--2 {
                 right: 2%;
-                bottom: 20%;
+                bottom: 10%;
                 width: 30%;
-                max-width: 600px;
+                max-width: 500px;
                 @media  (max-width: $breakpoint-md-min) {
                     display: none;
                 }
@@ -238,7 +255,7 @@
             flex-direction: column;
             align-items: center;
             @media  (max-width: $breakpoint-md-min) {
-                padding: 30px 0;
+                padding: 30px 0 140px;
             }
             .close_popup {
                 position: absolute;
@@ -285,7 +302,6 @@
                     font-size: 36px;
                     line-height: 36px;
                     margin-bottom: 40px;
-                    width: 80%;
                 }
             }
             form {
@@ -308,7 +324,11 @@
                     outline: none;
                     border: 3px solid rgba(60, 60, 60, 0.203);
                     transition: .18s;
-                    
+                    @media  (max-width: $breakpoint-md-min) {
+                        font-size: 16px;
+                        height: 50px;
+                        border-radius: 15px;
+                    }
                     &::placeholder { 
                         color: rgba(60, 60, 60, 0.641);
                         opacity: 1; 
@@ -344,6 +364,11 @@
                     outline: none;
                     border: none;
                     transition: .2s;
+                    @media  (max-width: $breakpoint-md-min) {
+                        height: 60px;
+                        font-size: 20px;
+                        border-radius: 15px;
+                    }
                     &:hover {
                         cursor: pointer;
                         background: darken($color-blue, 10);
