@@ -22,7 +22,7 @@
         position: relative;
         overflow: hidden;
         transform: translateY(100%);
-        max-height: 670px;
+        max-height: 80vh;
         @media  (min-width: $breakpoint-xx-min) {
             margin: 25% 180px 0;
         }
@@ -213,7 +213,7 @@
         position: relative;
         overflow: hidden;
         transform: translateY(100%);
-        max-height: 670px;
+        max-height: 80vh;
         @media  (min-width: $breakpoint-xx-min) {
             margin: 25% 180px 0;
         }
