@@ -24,7 +24,7 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header class="header">
@@ -132,13 +132,22 @@
                 <div class="name">
                     Записаться на <br> консультацию
                 </div>
-                <form action="#">
-                    <input class="input" type="text" placeholder="Имя">
-                    <input class="input" type="text" placeholder="Телефон">
-                    <input class="input" type="text" placeholder="Ссылка на соцсеть">
+                <form id="form_consult" action="#">
+                    <input name="Имя" class="input" type="text" placeholder="Имя" required>
+                    <input name="Телефон" class="input" type="text" placeholder="Телефон" required>
+                    <input name="Ссылка на соцсеть" class="input" type="text" placeholder="Ссылка на соцсеть" required>
+                    <input name="email" class="input_pot" type="text" placeholder="Email" autocomplete="off" tabindex="-1">
     
                     <button class="form_submit">
                         Отправить
+                        <svg class="load-anim" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle 
+                            cx="50" cy="50" r="30"
+                            fill="transparent"
+                            stroke-width="8px"
+                            stroke-dasharray="160"
+                            />
+                        </svg>
                     </button>
                 </form>
             </div>
@@ -156,13 +165,22 @@
                 <div class="name">
                     Записаться на беслатный урок
                 </div>
-                <form action="#">
-                    <input class="input" type="text" placeholder="Имя">
-                    <input class="input" type="text" placeholder="Телефон">
-                    <input class="input" type="text" placeholder="Ссылка на соцсеть">
+                <form id="form_lesson" action="#">
+                    <input name="Имя" class="input" type="text" placeholder="Имя" required>
+                    <input name="Телефон" class="input" type="text" placeholder="Телефон" required>
+                    <input name="Ссылка на соцсеть" class="input" type="text" placeholder="Ссылка на соцсеть" required>
+                    <input name="email" class="input_pot" type="email" placeholder="Email" autocomplete="off" tabindex="-1">
     
                     <button class="form_submit">
                         Отправить
+                        <svg class="load-anim" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle 
+                            cx="50" cy="50" r="30"
+                            fill="transparent"
+                            stroke-width="8px"
+                            stroke-dasharray="160"
+                            />
+                        </svg>
                     </button>
                 </form>
             </div>
@@ -944,5 +962,7 @@
             opacity: 0;
         }
     </style>
+
+    <script src="/gsheet.js"></script>
 </body>
 </html>
